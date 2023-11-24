@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru"
+    tools:context=".Login.daftar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mingcute_left_fill"
+            android:background="@color/transparant"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:fontFamily="@font/robmed"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="20dp"
+            android:text="Full Name"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/fulname"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/backgrounwhite"
+            android:hint="Full Name"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textSize="13dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="46dp"/>
+
+        <EditText
+            android:id="@+id/tuser"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/backgrounwhite"
+            android:hint="@string/username"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textSize="13dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="46dp"/>
+
+        <EditText
+            android:id="@+id/emil"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/backgrounwhite"
+            android:hint="Email"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textSize="13dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="46dp"/>
+
+        <EditText
+            android:id="@+id/phon"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/backgrounwhite"
+            android:hint="Phone Number"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textSize="13dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="46dp"/>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/backgrounwhite"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password"
+                android:background="@color/transparant"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textPassword"
+                android:textSize="13dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/_473003_hide_hide_eye_hide_password_icon"
+                android:layout_marginEnd="20dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="46dp"/>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/backgrounwhite"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/conpass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Confirm Password"
+                android:background="@color/transparant"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:inputType="textPassword"
+                android:textSize="13dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/_473003_hide_hide_eye_hide_password_icon"
+                android:layout_marginEnd="20dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/summit"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:src="@drawable/submit_regis"
+            android:background="@color/transparant"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

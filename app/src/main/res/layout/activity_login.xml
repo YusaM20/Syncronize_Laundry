@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Login.login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/login_1"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rectangle_1"
+                android:scaleType="fitXY"
+                android:layout_gravity="bottom"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_1_removebg_preview_1"
+                android:layout_gravity="top"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rectangle_16"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="330dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="340dp"
+                android:fontFamily="@font/robmed"
+                android:textSize="24sp"/>
+
+            <ImageButton
+                android:id="@+id/log"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="430dp"
+                android:background="@color/transparant"
+                android:src="@drawable/submit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atau"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="485dp"
+                android:fontFamily="@font/robmed"
+                android:textSize="20sp"/>
+
+            <ImageButton
+                android:id="@+id/logugle"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:src="@drawable/submit__1_"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="530dp"
+                android:background="@color/transparant"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Akun"
+                android:textColor="@color/white"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="585dp"
+                android:fontFamily="@font/robmed"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/daftr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/register"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="590dp"
+                android:background="@color/transparant"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
