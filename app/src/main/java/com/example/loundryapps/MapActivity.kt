@@ -18,22 +18,21 @@ import com.google.android.gms.maps.model.MarkerOptions
 class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
     private lateinit var mMap: GoogleMap
     private lateinit var lastLocation: android.location.Location
-    private lateinit var fusedlLocationClient: FusedLocationProviderClient
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
 
-    companion object{
+    companion object {
         private const val LOCATION_REQUEST_CODE = 1
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.mapFragment)
-            as SupportMapFragment
+                as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        fusedlLocationClient = LocationServices.getFusedLocationProviderClient(this)
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
@@ -45,31 +44,33 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     }
 
     private fun setUpMap() {
-
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
             != PackageManager.PERMISSION_GRANTED) {
 
-                ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST_CODE)
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST_CODE)
             return
         }
         mMap.isMyLocationEnabled = true
-        fusedlLocationClient.lastLocation.addOnSuccessListener(this) {Location ->
-            if (Location != null){
-                lastLocation = Location
-                val curretLatLong = LatLng(Location.latitude, Location.longitude)
-                placeMarkerOnMap(curretLatLong)
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(curretLatLong,12f))
-
+        fusedLocationClient.lastLocation.addOnSuccessListener(this) { location ->
+            if (location != null) {
+                lastLocation = location
+                val currentLatLong = LatLng(location.latitude, location.longitude)
+                placeMarkerOnMap(currentLatLong)
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong, 12f))
+            } else {
+                // Handle jika lokasi terakhir tidak tersedia
             }
         }
     }
 
-    private fun placeMarkerOnMap(curretLatLong: LatLng) {
-        val markerOptions = MarkerOptions().position(curretLatLong)
-        markerOptions.title("$curretLatLong")
+    private fun placeMarkerOnMap(currentLatLong: LatLng) {
+        val markerOptions = MarkerOptions().position(currentLatLong)
+        markerOptions.title("$currentLatLong")
         mMap.addMarker(markerOptions)
-
     }
 
-    override fun onMarkerClick(p0: Marker) = false
+    override fun onMarkerClick(marker: Marker): Boolean {
+        // Handle event klik pada marker jika diperlukan
+        return false
+    }
 }

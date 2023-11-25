@@ -14,14 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loundryapps"
         tools:targetApi="31">
-        <activity
-            android:name=".MapActivity"
-            android:exported="false" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDe0IjC4-SB9izmp68p8ZwT3qMhBRmDb4k" />
-
+            android:value="AIzaSyAdGZqnpN0_aMt81nCdqlq99BcD5YY-4WI"/>
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"/>
 
         <activity
             android:name=".Nav.Navbar"
@@ -36,9 +34,9 @@
             android:name=".Login.login"
             android:exported="false" />
         <activity
-            android:name=".MapActivity"
-            android:exported="true"
-            tools:ignore="DuplicateActivity">
+            android:name=".Login.awal"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
