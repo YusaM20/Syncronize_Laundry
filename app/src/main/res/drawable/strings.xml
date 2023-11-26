@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LaundryEase</string>
+    <string name="name">My Profile</string>
+    <string name="user">Larasati</string>
+    <string name="handpone">085456789101</string>
+    <string name="nl">Nama Lengkap</string>
+    <string name="uks">Ubah Kata Sandi</string>
+    <string name="us">Ubah Seluler</string>
+    <string name="te">Tambahkan Email</string>
+    <string name="Keluar">Keluar</string>
+    <string name="email">Belum Verifikasi</string>
+    <string name="right"> > </string>
+</resources>

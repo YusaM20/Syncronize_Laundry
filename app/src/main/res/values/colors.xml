@@ -10,4 +10,6 @@
     <color name="transparant">#00FFFFFF</color>
     <color name="biru">#5D96B2</color>
     <color name="round">#1976D2</color>
+    <color name="merah">#EC0B0B</color>
+    <color name="abu">#54555C</color>
 </resources>
