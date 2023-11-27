@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.loundryapps.MapActivity
+import com.example.loundryapps.activity.MapActivity
 import com.example.loundryapps.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
 //import android.view.ViewGroup
 //import android.widget.TextView
 //import androidx.fragment.app.Fragment
-//import com.example.loundryapps.MapActivity
+//import com.example.loundryapps.activity.MapActivity
 //import com.example.loundryapps.databinding.FragmentHomeBinding
 //
 //class HomeFragment : Fragment() {

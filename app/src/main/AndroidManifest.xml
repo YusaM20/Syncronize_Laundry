@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,13 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loundryapps"
         tools:targetApi="31">
+        <activity
+            android:name=".activity.NotifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ulasanActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAdGZqnpN0_aMt81nCdqlq99BcD5YY-4WI"/>
-        <activity
-            android:name=".MapActivity"
-            android:exported="false"/>
+            android:value="AIzaSyAdGZqnpN0_aMt81nCdqlq99BcD5YY-4WI" />
 
+        <activity
+            android:name=".activity.MapActivity"
+            android:exported="false" />
         <activity
             android:name=".Nav.Navbar"
             android:exported="false" />
@@ -36,7 +44,6 @@
         <activity
             android:name=".Login.awal"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
