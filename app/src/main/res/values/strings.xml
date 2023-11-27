@@ -47,16 +47,17 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 
-        <string name="name">My Profile</string>
-        <string name="user">Larasati</string>
-        <string name="handpone">085456789101</string>
-        <string name="nl">Nama Lengkap</string>
-        <string name="uks">Ubah Kata Sandi</string>
-        <string name="us">Ubah Seluler</string>
-        <string name="te">Tambahkan Email</string>
-        <string name="Keluar">Keluar</string>
-        <string name="email">Belum Verifikasi</string>
-        <string name="right"> > </string>
+    <string name="name">My Profile</string>
+    <string name="user">Larasati</string>
+    <string name="handpone">085456789101</string>
+    <string name="nl">Nama Lengkap</string>
+    <string name="uks">Ubah Kata Sandi</string>
+    <string name="us">Ubah Seluler</string>
+    <string name="te">Tambahkan Email</string>
+    <string name="Keluar">Keluar</string>
+    <string name="email">Belum Verifikasi</string>
+    <string name="right"> > </string>
+    <string name="Ulasan">Ulasan order</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
