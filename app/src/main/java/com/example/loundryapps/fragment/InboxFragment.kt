@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.loundryapps.Nav.Navbar
+import com.example.loundryapps.activity.MessageActivity
 import com.example.loundryapps.activity.NotifikasiActivity
 import com.example.loundryapps.activity.ulasanActivity
 import com.example.loundryapps.databinding.FragmentInboxBinding
@@ -37,14 +38,24 @@ class InboxFragment : Fragment() {
         btnnot.setOnClickListener {
             naviToNotif()
         }
+        val btnnes: TextView = binding.mess
+        btnnes.setOnClickListener {
+            naviToMess()
+        }
 
 
         return root
     }
 
+    private fun naviToMess() {
+        val intent = Intent(requireActivity(), MessageActivity::class.java)
+        startActivity(intent)
+    }
+
     private fun onBackPressed() {
         val intent = Intent(requireActivity(), Navbar::class.java)
-        startActivity(intent)    }
+        startActivity(intent)
+    }
 
     private fun naviToUlas() {
         val intent = Intent(requireActivity(), ulasanActivity::class.java)
