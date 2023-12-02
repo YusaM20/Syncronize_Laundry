@@ -17,6 +17,11 @@ class HOME : Fragment(), View.OnClickListener {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
+    override fun onClick(p0: View?) {
+        TODO("Not yet implemented")
+
+    }
+
 //    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 //        super.onViewCreated(view, savedInstanceState)
 //
