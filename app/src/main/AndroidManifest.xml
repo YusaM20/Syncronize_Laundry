@@ -16,6 +16,15 @@
         android:theme="@style/Theme.Loundryapps"
         tools:targetApi="31">
         <activity
+            android:name=".activity.washActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NearbyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ArtikelActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.NotifikasiActivity"
             android:exported="false" />
         <activity
