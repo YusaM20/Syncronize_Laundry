@@ -4,414 +4,681 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#327094"
     tools:context=".fragment.HomeFragment">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HOME" />
+        android:background="#327094"
+        tools:context="">
 
-    <ImageView
-        android:id="@+id/profil"
-        android:layout_width="100dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/pevita" />
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-    <TextView
-        android:id="@+id/saying"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
-        android:text="Hai, Rania Vera\nAnd this your Location..."
-        android:textColor="#F4F5F6"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/profil"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/pevita" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/saying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_toEndOf="@+id/profil"
+                android:text="Hai, Rania Vera\nAnd this your Location..."
+                android:textColor="#F4F5F6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/bgrounded"
-            android:layout_width="410dp"
-            android:layout_height="510dp"
-            android:layout_marginTop="220dp"
-            app:cardCornerRadius="60dp" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/categories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="240dp"
-        android:text="Categories"
-        android:textColor="#1A4E6F"
-        android:textSize="26sp"
-        android:textStyle="bold" />
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="290dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_below="@id/headerLayout">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="110dp"
-                android:layout_height="160dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bgrounded"
+                    android:layout_width="410dp"
+                    android:layout_height="1900dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="60dp">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/washfold" />
 
                     <TextView
+                        android:id="@+id/categories"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wash &amp; Fold"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="110dp"
-                android:layout_height="160dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
-                        android:contentDescription="washiron Image"
-                        android:src="@drawable/washiron" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Wash &amp; Iron"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="110dp"
-                android:layout_height="160dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:contentDescription="dryclean Image"
-                        android:src="@drawable/dryclean" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dry Clean"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="110dp"
-                android:layout_height="160dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:contentDescription="premium Image"
-                        android:src="@drawable/premium" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Premium"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="110dp"
-                android:layout_height="160dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:contentDescription="Kilo Laundry Image"
-                        android:src="@drawable/kilolaundry" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kilo Laundry"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/promo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="490dp"
-            android:text="Promo"
-            android:textColor="#1A4E6F"
-            android:textSize="26sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="490dp"
-            android:text="View All"
-            android:textColor="#1A4E6F"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="520dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="promo1"
-                        android:src="@drawable/promo1" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="promo2"
-                        android:src="@drawable/promo2" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="promo3"
-                        android:src="@drawable/promo3" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="740dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="loc1"
-                        android:src="@drawable/loc1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sakinah"
-                        android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Categories"
+                        android:textColor="#1A4E6F"
+                        android:textSize="26sp"
                         android:textStyle="bold" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="loc2"
-                        android:src="@drawable/loc2" />
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="110dp"
+                                android:layout_height="160dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
+                                    <ImageView
+                                        android:id="@+id/wash"
+                                        android:layout_width="80dp"
+                                        android:layout_height="100dp"
+                                        android:src="@drawable/washfold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Wash &amp; Fold"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
 
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="loc3"
-                        android:src="@drawable/loc3" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="110dp"
+                                android:layout_height="160dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="240dp"
-                android:layout_height="140dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="20dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="120dp"
+                                        android:contentDescription="washiron Image"
+                                        android:src="@drawable/washiron" />
 
-                    <ImageView
-                        android:layout_width="240dp"
-                        android:layout_height="140dp"
-                        android:contentDescription="loc4"
-                        android:src="@drawable/loc4" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Wash &amp; Iron"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="110dp"
+                                android:layout_height="160dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
 
-        </LinearLayout>
-    </HorizontalScrollView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
 
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:contentDescription="dryclean Image"
+                                        android:src="@drawable/dryclean" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dry Clean"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="110dp"
+                                android:layout_height="160dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:contentDescription="premium Image"
+                                        android:src="@drawable/premium" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Premium"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="110dp"
+                                android:layout_height="160dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:contentDescription="Kilo Laundry Image"
+                                        android:src="@drawable/kilolaundry" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kilo Laundry"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="90dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/promo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="170dp"
+                            android:text="Promo"
+                            android:textColor="#1A4E6F"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="170dp"
+                            android:text="View All"
+                            android:textColor="#1A4E6F"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="280dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="240dp"
+                                android:layout_height="140dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="240dp"
+                                        android:layout_height="140dp"
+                                        android:contentDescription="promo1"
+                                        android:src="@drawable/promo1" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="240dp"
+                                android:layout_height="140dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="240dp"
+                                        android:layout_height="140dp"
+                                        android:contentDescription="promo2"
+                                        android:src="@drawable/promo2" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="240dp"
+                                android:layout_height="140dp"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="240dp"
+                                        android:layout_height="140dp"
+                                        android:contentDescription="promo3"
+                                        android:src="@drawable/promo3" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="260dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pomo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="190dp"
+                            android:text="Nearby"
+                            android:textColor="#1A4E6F"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/alner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="190dp"
+                            android:text="View All"
+                            android:textColor="#1A4E6F"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="480dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:onClick="onWashFoldClick"
+                                app:cardCornerRadius="20dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center">
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/loc1" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Den Gembol"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="40dp"
+                                        android:text="2.3km | Krapyak, Bantul"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="67dp"
+                                        android:text="Start from   : Rp. 9000"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="80dp"
+                                        android:text="Transaction : 1"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="93dp"
+                                        android:text="Rating           : 4.5"
+                                        android:textSize="12sp" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:onClick="onWashFoldClick"
+                                app:cardCornerRadius="20dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center">
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/loc2" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Ar-Rauf"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="40dp"
+                                        android:text="2.0km | Krapyak, Bantul"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="67dp"
+                                        android:text="Start from   : Rp. 8500"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="80dp"
+                                        android:text="Transaction : 2"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="93dp"
+                                        android:text="Rating           : 4.5"
+                                        android:textSize="12sp" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:cardCornerRadius="20dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center">
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/loc1" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Den Gembol"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="40dp"
+                                        android:text="2.3km | Krapyak, Bantul"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="67dp"
+                                        android:text="Start from   : Rp. 9000"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="80dp"
+                                        android:text="Transaction : 1"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="93dp"
+                                        android:text="Rating           : 4.5"
+                                        android:textSize="12sp" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                app:cardCornerRadius="20dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center">
+
+                                    <ImageView
+                                        android:layout_width="150dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/loc1" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Den Gembol"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="40dp"
+                                        android:text="2.3km | Krapyak, Bantul"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="67dp"
+                                        android:text="Start from   : Rp. 9000"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="80dp"
+                                        android:text="Transaction : 1"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="170dp"
+                                        android:layout_marginTop="93dp"
+                                        android:text="Rating           : 4.5"
+                                        android:textSize="12sp" />
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="360dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/promi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="290dp"
+                            android:text="Artikel"
+                            android:textColor="#1A4E6F"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/alkel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="290dp"
+                            android:text="View All"
+                            android:textColor="#1A4E6F"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
 </FrameLayout>
