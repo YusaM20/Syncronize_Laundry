@@ -1,5 +1,3 @@
-package com.example.laundryease.UI.data
-
-import android.media.Image
+package com.example.loundryapps.data
 
 data class item(var titleImage: Int, var image: Int)

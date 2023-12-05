@@ -1,14 +1,17 @@
 package com.example.loundryapps.activity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.laundryease.UI.data.adapter
-import com.example.laundryease.UI.data.item
 import com.example.loundryapps.R
+import com.example.loundryapps.data.adapter
+import com.example.loundryapps.data.item
 
-class AddActivity : AppCompatActivity() {
+class AddActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var newRecyclerView: RecyclerView
     private lateinit var newArrayList: ArrayList<item>
@@ -18,6 +21,9 @@ class AddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
+
+        val btn : ImageView = findViewById(R.id.btnadd)
+        btn.setOnClickListener(this)
 
         titleimage = arrayOf(
             R.drawable.baju,
@@ -79,5 +85,16 @@ class AddActivity : AppCompatActivity() {
         }
 
         newRecyclerView.adapter = adapter(newArrayList)
+    }
+
+    override fun onClick(v: View?) {
+        if (v != null) {
+            when(v.id){
+                R.id.btnadd ->{
+                    val intent = Intent(this, ConfirmActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+        }
     }
 }
