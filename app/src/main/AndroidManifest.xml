@@ -16,7 +16,22 @@
         android:theme="@style/Theme.Loundryapps"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ConpayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConfirmActivity"
+            android:exported="true" />
+        <activity
             android:name=".activity.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PesanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddActivity"
             android:exported="false" />
         <activity
             android:name=".activity.washActivity"

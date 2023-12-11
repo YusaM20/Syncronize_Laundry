@@ -674,8 +674,182 @@
                             android:textColor="#1A4E6F"
                             android:textSize="18sp" />
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_marginTop="680dp">
 
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginBottom="16dp"
+                            android:clickable="true"
+                            android:focusable="true">
 
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="180dp"
+                                    android:layout_height="140dp"
+                                    android:src="@drawable/artikeel1" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Pentingnya Laundry  khusus Pakaian Bayi"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:text="Pakaian bayi bukan hanya
+                            busana lucu, tetapi juga . . ."
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="67dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:text="08 November 2023"
+                                    android:textColor="#0D77B2"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="110dp"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginBottom="16dp"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="180dp"
+                                    android:layout_height="140dp"
+                                    android:src="@drawable/artikeel2" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Tips Perawatan Sepatu Tahan Lama"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:text="Apakah sepatu kesukaan anda menunjukan tanda-tanda . . ."
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="67dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:text="08 November 2023"
+                                    android:textColor="#0D77B2"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="110dp"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="20dp"
+                            android:layout_marginBottom="16dp"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center">
+
+                                <ImageView
+                                    android:layout_width="180dp"
+                                    android:layout_height="140dp"
+                                    android:src="@drawable/artikel3" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Panduan Membersihkan Pakaian"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:text="Pakaian burkat adalah manifestasi keanggunan dan . . ."
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="84dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="190dp"
+                                    android:text="08 November 2023"
+                                    android:textColor="#0D77B2"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="116dp"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </RelativeLayout>
         </ScrollView>
