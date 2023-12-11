@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Order">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            app:tint="@android:color/black"
+            android:src="@drawable/line_left" />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textColor="#1A4E6F"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="35dp"
+        android:layout_marginTop="66dp">
+
+        <ImageView
+            android:id="@+id/imageSearch"
+            android:layout_width="24dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Search Icon"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/imageSearch"
+            android:background="@android:color/white"
+            android:hint="Search Service or Outlet"
+            android:padding="8dp"
+            android:textColor="#5D96B2"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="86dp">
+
+        <TextView
+            android:id="@+id/active"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/cardViewSearch"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:text="Active (0)"
+            android:textColor="#8E97AA"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/cardViewSearch"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:text="Done (0)"
+            android:textColor="#8E97AA"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/cardViewSearch"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:text="Cancel (0)"
+            android:textColor="#8E97AA"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/bottomorder"
+        android:layout_marginTop="140dp"
+        android:background="#8E97AA" />
+
+
+</FrameLayout>
