@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "680795283936",
+    "project_id": "synconize-29809",
+    "storage_bucket": "synconize-29809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680795283936:android:1f0e7495c5c7fc7c628b85",
+        "android_client_info": {
+          "package_name": "com.example.loundryapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680795283936-fn7p13uat5ss90p6ue84gtlh7arn1c9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loundryapps",
+            "certificate_hash": "b508926df99ba833c043a8ac961220f1f7ac102b"
+          }
+        },
+        {
+          "client_id": "680795283936-m11blonh28dafua4vbskpo52imaotkk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANxqotXBg1qudfkhhJmIjIqYz4ahcP6N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680795283936-fkd6t1irm9dkbmd96vi9mram1oi6csff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

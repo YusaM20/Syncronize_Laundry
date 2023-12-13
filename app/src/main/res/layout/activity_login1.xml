@@ -33,19 +33,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/username"
+            android:text="Email"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="46dp"/>
 
         <EditText
+            android:id="@+id/emil"
             android:layout_width="330dp"
             android:layout_height="45dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/backgrounwhite"
-            android:hint="@string/username"
+            android:hint="email"
             android:maxLines="1"
             android:inputType="text"
             android:textSize="16dp"
@@ -68,6 +69,7 @@
             android:background="@drawable/backgrounwhite"
             android:layout_marginTop="10dp">
             <EditText
+                android:id="@+id/pass"
                 android:layout_width="330dp"
                 android:layout_height="45dp"
                 android:hint="@string/password"
