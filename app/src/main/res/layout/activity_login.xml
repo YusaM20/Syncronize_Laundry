@@ -21,11 +21,12 @@
                 android:scaleType="fitXY"/>
 
             <ImageView
+                android:id="@+id/logoogle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/rectangle_1"
+                android:layout_gravity="bottom"
                 android:scaleType="fitXY"
-                android:layout_gravity="bottom"/>
+                android:src="@drawable/rectangle_1" />
 
             <ImageView
                 android:layout_width="match_parent"
