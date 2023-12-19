@@ -10,13 +10,14 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.loundryapps.R
+import com.example.loundryapps.data.payment.payment
 
 class ConfirmActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_confirm)
 
-        val btn : ImageView = findViewById(R.id.pay)
+        val btn : ImageView = findViewById(R.id.pesan)
         btn.setOnClickListener(this)
 
         val spinerId = findViewById<Spinner>(R.id.curira)
@@ -43,8 +44,8 @@ class ConfirmActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         if (v != null) {
             when(v.id){
-                R.id.pay ->{
-                    val intent = Intent(this, PayActivity::class.java)
+                R.id.pesan ->{
+                    val intent = Intent(this, payment::class.java)
                     startActivity(intent)
                 }
             }

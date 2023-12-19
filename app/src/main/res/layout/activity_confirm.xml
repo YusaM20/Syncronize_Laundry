@@ -194,7 +194,7 @@
     </ScrollView>
 
     <ImageView
-        android:id="@+id/pay"
+        android:id="@+id/pesan"
         android:layout_width="349dp"
         android:layout_height="61dp"
         android:src="@drawable/servi"
